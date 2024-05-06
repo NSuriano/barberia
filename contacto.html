@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style-contacto.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="logo.png" alt="logo de alura"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form method="post">
+           
+            <fieldset class="datos">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" id="nombre" name="" required>
+
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" placeholder="mail@dominio.com" required>
+
+                <label for="tel">Telefóno</label>
+                <input type="tel" id="tel" placeholder="xx xxxxxxxx" required>
+            </fieldset>
+
+            <fieldset class="mensaje">
+                <label for="tarea">Mensaje</label><br>
+                <textarea cols="50" rows="10" id="tarea"></textarea>
+            </fieldset>
+
+            <fieldset class="radio">
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                <label for="mail"><input type="radio" id="mail" name="eleccion" value="radio-mail">Email</label>
+                <label for="fono"><input type="radio" id="fono" name="eleccion" value="radio-fono">Teléfono</label>
+                <label for="inbox"><input type="radio" id="inbox" name="eleccion" value="radio-whatsapp"
+                        checked>WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend class="horario">¿En qué horario prefiere ser contactado?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                </select>
+            </fieldset>
+
+            <br>
+            <fieldset class="checkbox">
+                <label for="novedades"><input type="checkbox" id="novedades" checked>¿Le gustaría recibir novedades de
+                    la
+                    Barbería por correo electrónico?</label>
+            </fieldset>
+
+            <button type="submit" value="enviar formulario">Enviar Formulario</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>DÍAS</th>
+                    <th>HORARIOS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08 ~ 20 hs </td>
+                </tr>
+
+                <tr>
+                    <td>Miércoles</td>
+                    <td>08 ~ 20 hs</td>
+                </tr>
+
+                <tr>
+                    <td>Viernes</td>
+                    <td>08 ~ 20 hs</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer>
+
+        <img class="mi-logo" src="mi_logo.png" alt="logo del desarrollador">
+        <p class="pie-pagina">by Norma Suriano-2024</p>
+
+        <div class="iconos">
+            
+            <a href="https://github.com/NSuriano" target="_blank"><img src="github.png"></a>
+           
+            <a href="https://linkedin.com/in/norma-suriano-611789265" target="_blank"><img
+                    src="linkedin.png"></a>
+        </div>
+
+    </footer>
+    
+</body>
+
+</html>

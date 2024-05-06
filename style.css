@@ -1,0 +1,365 @@
+/*encabezado*/
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(#e1e0e0 ,#BBBBBB);
+    padding: 20px;
+}
+
+.caja h1 img {
+    width: 110px;
+    height: 130px;
+    margin-left: 100px;
+}
+
+nav {
+    position: absolute;
+    top: 70px;
+    right: 100px;
+}
+
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 26px;
+    text-decoration: none;
+    font-family: fantasy;
+}
+
+nav a:hover {
+    color: blue;
+
+}
+
+.titulo-header {
+    position: absolute;
+    top: 70px;
+    left: 250px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: fantasy;
+}
+
+/*pagina productos*/
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+    vertical-align: top;
+    border: solid 2px #000000;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin: 1.3%;
+
+
+}
+
+.productos h2 {
+    font-size: 26px;
+    font-weight: bold;
+
+}
+
+.descripcion {
+    font-size: 18px;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.productos li:hover {
+    border-color: blue;
+}
+
+.productos li:hover h2 {
+    font-size: 29px;
+}
+
+/*pagina home*/
+
+.home{
+    background-color:#f0f0f0;
+}
+
+
+.banner {
+    width: 100%;
+    filter: contrast(120%);
+    background-color: #f0f0f0;
+    margin: 0;
+  
+}
+
+.titulo-principal, .titulo-diferencial {
+    font-size: 30px;
+    text-align: center;
+    padding: 31px 10px;
+  
+} 
+
+
+.titulo-principal:first-letter,
+.titulo-diferencial:first-letter {
+    font-weight: bold;
+}
+
+
+.principal {
+    width: 80%;
+    background-color:#f0f0f0;
+    font-size: 17px;
+    padding: 13px;
+    letter-spacing: 1.5px;
+    line-height: 23px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.mision strong {
+    font-weight: bold;
+    font-style: italic;
+    color: #060653;
+}
+
+.mision {
+    width: 95%;
+    text-align: justify;
+    margin: 10px 35px 0;
+}
+
+.pinceles {
+    width: 14%;
+    height: 14%;
+    float: left;
+    margin: 2% 1.5% 2% 0;
+    box-shadow: -6px -6px 15px 8px black;
+}
+
+.mapa {
+    text-align: center;
+    font-size: 18px;
+    padding: 25px;
+    background: linear-gradient(#f0f0f0,#cccbcb);
+}
+
+.mapa p {
+    padding: 15px 0 30px 0;
+}
+ .mapa iframe{
+    width: 80%;
+    height: 300px;
+    box-shadow:  8px 8px 23px 10px #222020;
+ }
+
+
+.diferenciales{
+    display: flex;
+    vertical-align: top;
+    justify-content: center;
+    width: 100%;
+    background-color: #cccbcb;
+    padding: 5% 0;
+    
+}
+
+.titulo-diferencial {
+    background-color: #cccbcb;
+    padding-top: 2%;
+}
+
+.items{
+    width: 65%;
+    font-style: italic;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    padding-top: 3%;
+    
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+ 
+.imagenDiferenciales{
+    
+    width: 35%;
+    height: 40%;
+    align-items: right;
+    margin-left: 5%;
+    box-shadow: 12px 12px 26px 10px black; 
+}
+
+.imagenDiferenciales:hover,
+.video iframe:hover,
+.pinceles:hover {
+    opacity: 0.8;
+    transition: 400ms;
+}
+
+.video {
+    background: linear-gradient(#cccbcb,  #8e8d8d);
+    text-align: center;
+    padding: 4% 0;
+}
+
+.video iframe{
+    width: 40%;
+    height: 250px;
+    box-shadow:  8px 8px 25px 10px black;
+  
+}
+
+/*pie de pagina*/
+
+footer {
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    background-image: url(bg.jpg);
+    color: white;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.pie-pagina {
+   font-size: 21px; 
+   margin: 31px 5px 20px 5px;
+}
+
+.mi-logo {
+   width: 50px;
+   height: 50px; 
+   margin-top: 15px;
+   
+}
+
+   
+.iconos img {
+    width: 35px;
+    width: 35px;
+    margin: 15px 4px 10px 3px; 
+    display: inline-block;
+        
+}
+ 
+/*adaptativo */
+    
+@media screen and (max-width:780px){
+   
+     header {
+        padding: 0;
+        height: auto;
+     }
+
+    .caja h1, .titulo-header{
+       clear: left; 
+       top: 22px;
+       text-align: left;
+       margin: 0 3% 0 -15%;
+       padding: 0;
+       height: 9%;
+      font-size: 1.3em;
+           
+    }
+
+    nav li a{
+        
+        justify-items: center;
+        font-size: 1em;
+        position: relative;
+        left: 30%;
+        top: -13px;
+     
+    }
+
+    .productos{
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .productos li{
+        display: block;
+        width: 80%;
+        justify-items: center;
+        margin: 5% auto;
+    }
+    
+    .caja, .principal,.diferencial, .video {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .titulo-principal {
+        margin: 0;
+        font-size: 25px;
+
+    }
+
+    .pinceles {
+        margin: 4% 2%;
+    }
+
+
+    .principal > p {
+        margin: 10px auto; 
+        font-size: 15px;
+
+    }
+
+    .mapa {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .diferenciales {
+        display: block;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+                        
+    }
+
+    .diferenciales > .items {
+        width: 80%;
+        font-size: 1em;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .imagenDiferenciales, .video iframe {
+        margin-bottom: 7%;
+        width: 85%;
+    }
+
+}
+
