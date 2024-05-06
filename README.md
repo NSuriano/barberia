@@ -6,4 +6,4 @@
 <p>Al final del formulario, se publica en una tabla los días y horarios de atención de la barberia</p>
 <p>El front está enmaquetado con HTML5 y el estilo se realizó con CSS, en un formato responsivo</p>
 Puedes visualizar el sitio con este link:
-https://nsuriano.github.io/Barberia_Alura/
+https://nsuriano.github.io/barberia/
